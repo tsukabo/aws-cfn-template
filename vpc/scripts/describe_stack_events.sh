@@ -4,7 +4,7 @@ source 'var.sh'
 
 if [[ $# -ne 1 ]]; then
   echo '[error] 1 argument required'
-  exit 1
+  return
 fi
 
 AWS_PROFILE=${1}
